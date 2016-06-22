@@ -18,9 +18,9 @@ highlighter: rouge
 timezone: America/Los_Angeles
 
 ## Site structure
-url: "http://www.rootandflow.com" # the base hostname & protocol for your site
+url: "http://remy-actual.github.io" # the base hostname & protocol for your site
   # Do not use in design assets; "site.url" is only used used in the xml feed and in the page head for the canonical header and the RSS link. 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/rootandflow" # the subpath of your site, e.g. /blog
   # Use baseurl in design assets to indicate site root. 
   # If your baseurl varies from dev to production environment, set baseurl to match production and either: 
   # 1. run locally with "jekyll serve".
