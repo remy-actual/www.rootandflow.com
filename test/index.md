@@ -1,8 +1,25 @@
 ---
-layout: page
 title: Test
 top_nav: dev
 ---
+<h2>Site Collections:</h2>
+{% for collection in site.collections %}
+<h3>Collection (Label): {{ collection.label }}</h3>
+<p>Number of Static Files: {{ collection.files | size }}</p>
+<p>Relative directory: {{ collection.relative_directory }}</p>
+<p>Directory: {{ collection.directory }}</p>
+<p>Output: {{ collection.output }}</p>
+<h4>Docs:</h4>
+{% for doc in collection.docs %}
+<p>URL: {{ doc.url }}</p>
+<p>Path: {{ doc.path }}</p>
+<p>Relative Path: {{ doc.relative_path }}</p>
+<p>Collection: {{ doc.collection }}</p>
+<p>Date: {{ doc.date }}</p>
+<p>Content:</p>
+{{ doc.content }}
+{% endfor %}
+{% endfor %}
 
 <h3>JSON Test</h3>
 
@@ -233,7 +250,6 @@ Fifth iteration using:
 + site.baseurl is NIL: {% if site.baseurl == NIL %}True{% else %}False{% endif %}
 + site.title value is: {{ site.title }}
 + site.title value - downcase - is: {{ site.title | downcase }}
-+ site.title - downcase - is equal to Repo name: {% if site.title | downcase == site.github.repository_name %}True{% else %}False{% endif %}
 
 #### Data variables
 
