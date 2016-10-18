@@ -36,6 +36,10 @@ permalink: pretty
 cdn: 'http://media.rootandflow.com'
 
 ## Build settings
+### SCSS
+sass:
+  sass_dir: _sass
+  style: expanded
 
 ### Include Github Pages supported plugins
 gems:
@@ -59,7 +63,7 @@ exclude:
   - webpack.config.js
 
 ### ## Site metadata
-title: RootAndFlow
+title: "RootAndFlow.com"
 description: "Web Marketing and Design"
 ### Contact information
 email: connect@rootandflow.com
