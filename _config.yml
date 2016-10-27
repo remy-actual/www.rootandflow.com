@@ -87,6 +87,7 @@ defaults:
     values:
       functions:
       - foundation
+      scroll: sunlit-river
   -
     scope:
       path: ""
