@@ -168,6 +168,10 @@ figcaption {
 
 .banderole {
   @include grid-row();
+  overflow-y: auto;
+  @include breakpoint(small only) {
+    max-height: 22.5rem;
+  }
 }
 
 .titlelines {
