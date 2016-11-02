@@ -1,14 +1,22 @@
-<div class="include--posts-list">
-  <ul class="post-list">
+<nav class="include--posts-list">
+  <dl class="post-list">
     {% for post in site.posts %}
-      <li>
+      <dt>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
+        </a>
+      </dt>
+      <dd>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
-          </a>
-        </h2>
-      </li>
+      </dd>
+      {% if post.excerpt %}
+      <dd>
+        <blockquote cite="{{ post.url | prepend: site.baseurl }}"
+                   class="post-excerpt">
+          {{ post.excerpt }}
+        </blockquote>
+      </dd>
+      {% endif %}
     {% endfor %}
-  </ul>
-</div>
+  </dl>
+</nav>
