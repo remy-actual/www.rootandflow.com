@@ -1,0 +1,41 @@
+---
+layout: global
+---
+<main role="main" class="layout--page">
+
+  <article>
+    <div id="parallax" class="parallax">
+      {% include parallax-image.html %}
+      <header class="parallax--content">
+        <div class="banderole">
+          <div class="titlelines">
+            <h1 class="headline">{{ page.title | markdownify
+                              | strip_html
+                              | strip_newlines
+                              }}
+            </h1>
+    {% if page.description %}
+            <p class="subhead">{{ page.description
+                                           | markdownify
+                                           | strip_html
+                                           | strip_newlines
+                                           }}
+            </p>
+    {% endif %}
+          </div>
+          <div class="search-results">
+            <ul id="results-container" class="menu vertical text-right"></ul>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <section class="content--page">
+      <hr/>
+      {{ content }}
+      <hr/>
+    </section>
+
+  </article>
+
+</main>
