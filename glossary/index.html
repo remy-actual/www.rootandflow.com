@@ -95,7 +95,7 @@ top_nav: yes
           {% endfor %}
             </ol>
             <p>
-          {% assign listItems == nil %}
+          {% assign listItems = nil %}
         {% else %}
             <p>{{ rowDef[1] | escape }}<br />
           {% if rowSyn[1] %}
@@ -129,7 +129,7 @@ top_nav: yes
           {% endfor %}
         {% endcapture %}
 
-        {% assign descItems == nil %}
+        {% assign descItems = nil %}
 
         {% unless descPairs == nil %}
           {% assign descPairs = descPair | append: '-|-' | append: descPairs %}
@@ -175,7 +175,7 @@ top_nav: yes
           {% for pair in descPairs %}
         {{ pair }}
           {% endfor %}
-        {% assign descPairs == nil %}
+        {% assign descPairs = nil %}
       </dl>
     </dd>
   </dl>
@@ -227,8 +227,8 @@ top_nav: yes
   {{ entry[1] }}
 
 {% endfor %}
-
+<!--
 <h3>JSON Test</h3>
 
 <div class="fetched"></div>
-
+-->
