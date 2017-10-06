@@ -8,7 +8,7 @@ Gemfile.lock
 .jekyll-metadata
 node_modules
 nojekyll
-npm-debug.log
+npm-debug.log*
 .sass-cache
 _site
 *.swp
