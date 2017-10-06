@@ -1,6 +1,7 @@
 # Site settings
 ## Github Pages
-### Mandatory Configuration defaults
+### Configuration defaults
+#### Mandatory
 ### https://help.github.com/articles/configuring-jekyll/
 lsi: false
 safe: true
@@ -9,6 +10,9 @@ highlighter: rouge
 gist:
   noscript: false
 # source: repo top level directory
+
+#### Optional
+# encoding: utf-8
 
 ### Templating
 markdown: kramdown # Github Pages mandatory config
@@ -42,7 +46,7 @@ sass:
   style: expanded
 
 ### Include Github Pages supported plugins
-gems:
+plugins:
   - jekyll-coffeescript # Github Pages non-mandatory default
   - jekyll-paginate # Github Pages non-mandatory default
   - jekyll-redirect-from
