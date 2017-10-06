@@ -1,7 +1,6 @@
 ---
 title: Home
 description: Success with Scalable Strategies  
-top_nav: yes
 scroll: sunlit-river
 ---
 
